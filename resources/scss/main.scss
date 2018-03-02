@@ -3,16 +3,64 @@
     src: url(../fonts/MYRIADPRO-REGULAR.OTF);
 }
 
+@font-face {
+    font-family: UTMFLAVOUR;
+    src: url(../fonts/UTM-Flavour.ttf);
+}
+
+@font-face {
+    font-family: AVERTA;
+    src: url(../fonts/Averta.otf);
+}
+
+@font-face {
+    font-family: AVERTATHINITALIC;
+    src: url(../fonts/Averta-ThinItalic.otf);
+}
+
+@font-face {
+    font-family: AVERTAREGULAR;
+    src: url(../fonts/Averta-Regular.otf);
+}
+
+@font-face {
+    font-family: AVERTABOLD;
+    src: url(../fonts/Averta-Bold.otf);
+}
+
+@font-face {
+    font-family: AVERTALIGHT;
+    src: url(../fonts/Averta-Light.otf);
+}
+
+@font-face {
+    font-family: AVERTALIGHTITALIC;
+    src: url(../fonts/Averta-LightItalic.otf);
+}
+
+@font-face {
+    font-family: AVERTAEXTRATHIN;
+    src: url(../fonts/Averta-Extrathin.otf);
+}
+
 body {
 	margin: 0;
 	padding: 0;
 	footer {
 		background: #029a47;
-		height: 50px;
+		height: 44px;
+		.social-list {
+			margin-right: calc(50% - 405px);
+			float: right;
+			padding-top: 10px;
+			img {
+				height: 30px;
+			}
+		}
 	}
 	#prize-container {
 		padding-top: 50px;
-		width: 80%;
+		width: 900px;
 		margin: auto;
 		background: white;
 		overflow: auto;
@@ -23,9 +71,9 @@ body {
 				width: 20%;
 			}
 			.intro-title {
-				font-family: MYRIADPRO;
+				font-family: AVERTAREGULAR;
 				color: #034910;
-				font-size: 13px;
+				font-size: 12px;
 			}
 			.intro-4 {
 				img {
@@ -65,13 +113,13 @@ body {
 				width: 25%;
 			}
 			.prize-title {
-				font-family: MYRIADPRO;
+				font-family: AVERTAREGULAR;
 				color: #029a1a;
 				font-size: 22px;
 				margin-bottom: 0;
 			}
 			.prize-title-sub {
-				font-family: MYRIADPRO;
+				font-family: AVERTAREGULAR;
 				color: #029a1a;
 				margin-top: 4px;
 				font-size: 14px;
@@ -108,17 +156,17 @@ body {
 				}
 			}
 			.prize-demo-text {
-				font-family: MYRIADPRO;
+				font-family: AVERTALIGHTITALIC;
 				color: #838383;
 				text-align: center;
 				font-size: 16px;
 			}
 			.prize-rule {
-				font-family: MYRIADPRO;
+				font-family: AVERTABOLD;
 				color: #029a1a;
 				text-align: center;
 				text-transform: uppercase;
-				font-size: 22px;
+				font-size: 24px;
     			margin-top: 60px;
 			}
 		}
@@ -146,38 +194,44 @@ body {
 			padding: 20px 50px 30px 30px;
 			position: absolute;
 	    	top: 60px;
-	    	left: 200px;
+	    	left: calc(50% - 400px);
 			.join-box-title {
 				background: #bdda90;
 				color: white;
-				font-family: MYRIADPRO;
+				font-family: AVERTAREGULAR;
 				display: inline-block;
 			    width: 200px;
 			    padding-left: 10px;
 			    padding-top: 4px;
 			    padding-bottom: 4px;
 			    border-radius: 4px;
-			    margin-bottom: 20px;
+			    margin-bottom: 15px;
+			    font-size: 18px;
 			}
 			p {
-				color: #029a47;
-				font-family: MYRIADPRO;
-				font-size: 13px;
+				color: #a5a5a5;
+				font-family: AVERTAREGULAR;
+				font-size: 12px;
 				margin-top: 4px;
 				margin-bottom: 4px;
+				line-height: 14px;
+				a {
+					color: #3b96f7;
+				}
 			}
 		}
 		.join-box-2 {
 			top: 370px;
-    		left: 360px;
+    		right: calc(50% - 400px);
+    		left: auto;
     		p {
     			color: #a5a5a5;
     		}
     		.bottle-join-box {
     			position: absolute;
-			    height: 140px;
-			    left: -110px;
-			    top: 40px;
+			    height: 180px;
+			    left: -160px;
+			    top: 30px;
     		}
 		}
 		.ball-join-1 {
@@ -210,11 +264,28 @@ body {
 	#information-user {
 		background-image: url(../image/background_information_user.png);
 		background-size: cover;
-		height: 300px;
+		height: 320px;
 		padding-top: 20px;
+		position: relative;
+		.validate-error {
+			color: #f92020;
+		    text-align: center;
+		    margin: 0;
+		    margin-top: 8px;
+		    font-family: MYRIADPRO;
+		    display: none;
+		}
+		.arrow-down {
+			margin: auto;
+		    display: block;
+		    width: 28px;
+		    position: absolute;
+		    bottom: 15px;
+		    left: calc(50% - 14px);
+		}
 		.btn-complete {
 			background: #029a1a;
-			font-family: MYRIADPRO;
+			font-family: AVERTAEXTRATHIN;
 			color: white;
 			width: 280px;
 		    text-align: center;
@@ -223,10 +294,12 @@ body {
 		    line-height: 30px;
 		    border-radius: 4px;
 		    font-size: 13px;
+		    cursor: pointer;
+		    margin-top: 20px;
 		}
 		.title-information {
 			color: #029a1a;
-			font-family: MYRIADPRO;
+			font-family: AVERTABOLD;
 			text-transform: uppercase;
 			text-align: center;
 			font-size: 22px;
@@ -234,12 +307,13 @@ body {
 		.box-input {
 			margin-bottom: 10px;
 			span {
-				font-family: MYRIADPRO;
+				font-family: AVERTALIGHT;
 				color: #015d12;
 				display: block;
-				font-size: 15px;
+				font-size: 13px;
 				text-align: left;
     			padding-left: 35px;
+    			margin-bottom: 4px;
 			}
 			input {
 				background: white;
@@ -265,14 +339,16 @@ body {
 		}
 		.box-input-item {
 			span {
-				font-family: MYRIADPRO;
+				font-family: AVERTALIGHT;
 				color: #015d12;
 				display: block;
-				font-size: 15px;
+				font-size: 13px;
 				text-align: left;
+				margin-bottom: 4px;
 			}
 
 			input {
+				font-family: AVERTALIGHT;
 				background: white;
 			    border: none;
 			    border-radius: 2px;
@@ -291,9 +367,142 @@ body {
     		}
 		}
 	}
-	#header-top {
-		background: #70ba54;
-		height: 600px;
+	#question-container {
+		overflow: auto;
+		padding-bottom: 15px;
+		position: relative;
+		.header-image-4 {
+			position: absolute;
+		    height: 540px;
+		    bottom: 0;
+		    z-index: -1;
+		}
+		.question-intro {
+			background-color: #dbebc2;
+		    padding: 15px 20px;
+		    color: #073a0f;
+		    font-family: AVERTALIGHTITALIC;
+		    font-size: 13px;
+		    text-align: center;
+		}
+		// background: gray;
+		.question-box-container {
+			width: 850px;
+			margin: auto;
+		}
+		.box-question-container {
+			width: 360px;
+		}
+		.result-question-title {
+			color: #034910;
+			font-family: AVERTATHINITALIC;
+			font-size: 14px;
+			input {
+				outline: none;
+			    border: none;
+			    margin-left: 10px;
+			    border-bottom: 1px dotted #ddd;
+			    width: 378px;
+			    font-family: AVERTATHINITALIC;
+			}
+		}
+		.box-answer-item {
+			width: 28px;
+		    height: 40px;
+		    border: 1px solid #bef390;
+		    border-radius: 2px;
+		    float: left;
+		    color: gray;
+		    font-family: MYRIADPRO;
+		    text-align: center;
+		    line-height: 40px;
+		}
+		.box-result-question {
+			float: right;
+			margin-right: 170px;
+			margin-top: -25px;
+			.box-answer-item {
+				margin-left: 1px;
+			}
+		}
+		.box-answer-item.active {
+			background: #aad881;
+			border-color: #aad881;
+		}
+		.box-answer-container {
+			float: right;
+			width: 450px;
+			.box-answer {
+			    overflow: auto;
+			    margin-left: 30px;
+			    padding-left: 30px;
+			    margin-top: 30px;
+			    height: 44px;
+			    margin: 0;
+			    margin-bottom: 6px;
+			    padding-top: 22px;
+			}
+			.box-answer-2 {
+				padding-left: 120px;
+			}
+			.box-answer-3 {
+				padding-left: 150px;
+			}
+			.box-answer-4 {
+				margin-left: 0;
+				padding-left: 0px;
+			}
+			.box-answer-6 {
+				padding-left: 180px;
+			}
+		}
+		.question-title {
+			color: #029a1a;
+			text-align: center;
+			font-size: 22px;
+			font-family: AVERTABOLD;
+		}
+		.box-question {
+			p {
+				color: #034910;
+				font-family: AVERTALIGHT;
+				font-size: 12px;
+			}
+			input {
+				border: none;
+			    width: 100%;
+			    font-family: AVERTALIGHT;
+			    outline: none;
+			    border-bottom: 1px solid #ddd;
+			}
+		}
+		.stt {
+			font-family: AVERTABOLD;
+			margin-right: 6px;
+		}
+	}
+	#banner {
+		position: relative;
+		.logo-text-intro {
+			position: absolute;
+			left: 220px;
+			margin-top: 15px;
+			.text-sub {
+				font-family: Arial;
+			    color: white;
+			    margin: 0;
+			}
+			.text-main {
+				font-family: UTMFLAVOUR;
+			    color: white;
+			    font-size: 28px;
+			    margin: 0;
+			    margin-top: -5px;
+			}
+		}
+		.banner-image {
+			width: 100%;
+		}
 		.logo {
 			position: absolute;
 		    right: 200px;
@@ -305,14 +514,35 @@ body {
 		}
 		.header-image-1 {
 			position: absolute;
-		    height: 200px;
+		    height: 230px;
 		    right: 0;
 		    top: 0;
+		}
+		.header-image-5 {
+			height: 600px;
+		    position: absolute;
+		    right: 0;
+		    bottom: -440px;
+		    z-index: -1;
 		}
 		.header-image-2 {
 			position: absolute;
 		    top: 20px;
 		    height: 120px;
+		}
+		.happy-container {
+			position: absolute;
+			text-align: center;
+			bottom: 60px;
+			left: 200px;
+			img {
+				width: 300px;
+			}
+			p {
+				font-family: MYRIADPRO;
+				color: white;
+				font-size: 13px;
+			}
 		}
 	}
 }

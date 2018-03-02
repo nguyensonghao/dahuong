@@ -2,15 +2,53 @@
   font-family: MYRIADPRO;
   src: url(../fonts/MYRIADPRO-REGULAR.OTF); }
 
+@font-face {
+  font-family: UTMFLAVOUR;
+  src: url(../fonts/UTM-Flavour.ttf); }
+
+@font-face {
+  font-family: AVERTA;
+  src: url(../fonts/Averta.otf); }
+
+@font-face {
+  font-family: AVERTATHINITALIC;
+  src: url(../fonts/Averta-ThinItalic.otf); }
+
+@font-face {
+  font-family: AVERTAREGULAR;
+  src: url(../fonts/Averta-Regular.otf); }
+
+@font-face {
+  font-family: AVERTABOLD;
+  src: url(../fonts/Averta-Bold.otf); }
+
+@font-face {
+  font-family: AVERTALIGHT;
+  src: url(../fonts/Averta-Light.otf); }
+
+@font-face {
+  font-family: AVERTALIGHTITALIC;
+  src: url(../fonts/Averta-LightItalic.otf); }
+
+@font-face {
+  font-family: AVERTAEXTRATHIN;
+  src: url(../fonts/Averta-Extrathin.otf); }
+
 body {
   margin: 0;
   padding: 0; }
   body footer {
     background: #029a47;
-    height: 50px; }
+    height: 44px; }
+    body footer .social-list {
+      margin-right: calc(50% - 405px);
+      float: right;
+      padding-top: 10px; }
+      body footer .social-list img {
+        height: 30px; }
   body #prize-container {
     padding-top: 50px;
-    width: 80%;
+    width: 900px;
     margin: auto;
     background: white;
     overflow: auto; }
@@ -19,9 +57,9 @@ body {
       text-align: center;
       width: 20%; }
     body #prize-container .intro .intro-title {
-      font-family: MYRIADPRO;
+      font-family: AVERTAREGULAR;
       color: #034910;
-      font-size: 13px; }
+      font-size: 12px; }
     body #prize-container .intro .intro-4 img {
       height: 80px;
       margin-top: 10px; }
@@ -46,12 +84,12 @@ body {
         text-align: center;
         width: 25%; }
       body #prize-container .prize .prize-title {
-        font-family: MYRIADPRO;
+        font-family: AVERTAREGULAR;
         color: #029a1a;
         font-size: 22px;
         margin-bottom: 0; }
       body #prize-container .prize .prize-title-sub {
-        font-family: MYRIADPRO;
+        font-family: AVERTAREGULAR;
         color: #029a1a;
         margin-top: 4px;
         font-size: 14px; }
@@ -73,16 +111,16 @@ body {
       body #prize-container .prize .prize-4 .prize-title-sub {
         font-size: 12px; }
       body #prize-container .prize .prize-demo-text {
-        font-family: MYRIADPRO;
+        font-family: AVERTALIGHTITALIC;
         color: #838383;
         text-align: center;
         font-size: 16px; }
       body #prize-container .prize .prize-rule {
-        font-family: MYRIADPRO;
+        font-family: AVERTABOLD;
         color: #029a1a;
         text-align: center;
         text-transform: uppercase;
-        font-size: 22px;
+        font-size: 24px;
         margin-top: 60px; }
   body #join-container {
     background-image: url(../image/join_background.png);
@@ -105,34 +143,39 @@ body {
       padding: 20px 50px 30px 30px;
       position: absolute;
       top: 60px;
-      left: 200px; }
+      left: calc(50% - 400px); }
       body #join-container .join-box .join-box-title {
         background: #bdda90;
         color: white;
-        font-family: MYRIADPRO;
+        font-family: AVERTAREGULAR;
         display: inline-block;
         width: 200px;
         padding-left: 10px;
         padding-top: 4px;
         padding-bottom: 4px;
         border-radius: 4px;
-        margin-bottom: 20px; }
+        margin-bottom: 15px;
+        font-size: 18px; }
       body #join-container .join-box p {
-        color: #029a47;
-        font-family: MYRIADPRO;
-        font-size: 13px;
+        color: #a5a5a5;
+        font-family: AVERTAREGULAR;
+        font-size: 12px;
         margin-top: 4px;
-        margin-bottom: 4px; }
+        margin-bottom: 4px;
+        line-height: 14px; }
+        body #join-container .join-box p a {
+          color: #3b96f7; }
     body #join-container .join-box-2 {
       top: 370px;
-      left: 360px; }
+      right: calc(50% - 400px);
+      left: auto; }
       body #join-container .join-box-2 p {
         color: #a5a5a5; }
       body #join-container .join-box-2 .bottle-join-box {
         position: absolute;
-        height: 140px;
-        left: -110px;
-        top: 40px; }
+        height: 180px;
+        left: -160px;
+        top: 30px; }
     body #join-container .ball-join-1 {
       position: absolute;
       height: 105px;
@@ -158,11 +201,26 @@ body {
   body #information-user {
     background-image: url(../image/background_information_user.png);
     background-size: cover;
-    height: 300px;
-    padding-top: 20px; }
+    height: 320px;
+    padding-top: 20px;
+    position: relative; }
+    body #information-user .validate-error {
+      color: #f92020;
+      text-align: center;
+      margin: 0;
+      margin-top: 8px;
+      font-family: MYRIADPRO;
+      display: none; }
+    body #information-user .arrow-down {
+      margin: auto;
+      display: block;
+      width: 28px;
+      position: absolute;
+      bottom: 15px;
+      left: calc(50% - 14px); }
     body #information-user .btn-complete {
       background: #029a1a;
-      font-family: MYRIADPRO;
+      font-family: AVERTAEXTRATHIN;
       color: white;
       width: 280px;
       text-align: center;
@@ -170,22 +228,25 @@ body {
       height: 30px;
       line-height: 30px;
       border-radius: 4px;
-      font-size: 13px; }
+      font-size: 13px;
+      cursor: pointer;
+      margin-top: 20px; }
     body #information-user .title-information {
       color: #029a1a;
-      font-family: MYRIADPRO;
+      font-family: AVERTABOLD;
       text-transform: uppercase;
       text-align: center;
       font-size: 22px; }
     body #information-user .box-input {
       margin-bottom: 10px; }
       body #information-user .box-input span {
-        font-family: MYRIADPRO;
+        font-family: AVERTALIGHT;
         color: #015d12;
         display: block;
-        font-size: 15px;
+        font-size: 13px;
         text-align: left;
-        padding-left: 35px; }
+        padding-left: 35px;
+        margin-bottom: 4px; }
       body #information-user .box-input input {
         background: white;
         border: none;
@@ -205,12 +266,14 @@ body {
         float: left;
         text-align: center; }
     body #information-user .box-input-item span {
-      font-family: MYRIADPRO;
+      font-family: AVERTALIGHT;
       color: #015d12;
       display: block;
-      font-size: 15px;
-      text-align: left; }
+      font-size: 13px;
+      text-align: left;
+      margin-bottom: 4px; }
     body #information-user .box-input-item input {
+      font-family: AVERTALIGHT;
       background: white;
       border: none;
       border-radius: 2px;
@@ -224,24 +287,146 @@ body {
       margin-right: 25px; }
       body #information-user .cmnd input {
         width: 80px; }
-  body #header-top {
-    background: #70ba54;
-    height: 600px; }
-    body #header-top .logo {
+  body #question-container {
+    overflow: auto;
+    padding-bottom: 15px;
+    position: relative; }
+    body #question-container .header-image-4 {
+      position: absolute;
+      height: 540px;
+      bottom: 0;
+      z-index: -1; }
+    body #question-container .question-intro {
+      background-color: #dbebc2;
+      padding: 15px 20px;
+      color: #073a0f;
+      font-family: AVERTALIGHTITALIC;
+      font-size: 13px;
+      text-align: center; }
+    body #question-container .question-box-container {
+      width: 850px;
+      margin: auto; }
+    body #question-container .box-question-container {
+      width: 360px; }
+    body #question-container .result-question-title {
+      color: #034910;
+      font-family: AVERTATHINITALIC;
+      font-size: 14px; }
+      body #question-container .result-question-title input {
+        outline: none;
+        border: none;
+        margin-left: 10px;
+        border-bottom: 1px dotted #ddd;
+        width: 378px;
+        font-family: AVERTATHINITALIC; }
+    body #question-container .box-answer-item {
+      width: 28px;
+      height: 40px;
+      border: 1px solid #bef390;
+      border-radius: 2px;
+      float: left;
+      color: gray;
+      font-family: MYRIADPRO;
+      text-align: center;
+      line-height: 40px; }
+    body #question-container .box-result-question {
+      float: right;
+      margin-right: 170px;
+      margin-top: -25px; }
+      body #question-container .box-result-question .box-answer-item {
+        margin-left: 1px; }
+    body #question-container .box-answer-item.active {
+      background: #aad881;
+      border-color: #aad881; }
+    body #question-container .box-answer-container {
+      float: right;
+      width: 450px; }
+      body #question-container .box-answer-container .box-answer {
+        overflow: auto;
+        margin-left: 30px;
+        padding-left: 30px;
+        margin-top: 30px;
+        height: 44px;
+        margin: 0;
+        margin-bottom: 6px;
+        padding-top: 22px; }
+      body #question-container .box-answer-container .box-answer-2 {
+        padding-left: 120px; }
+      body #question-container .box-answer-container .box-answer-3 {
+        padding-left: 150px; }
+      body #question-container .box-answer-container .box-answer-4 {
+        margin-left: 0;
+        padding-left: 0px; }
+      body #question-container .box-answer-container .box-answer-6 {
+        padding-left: 180px; }
+    body #question-container .question-title {
+      color: #029a1a;
+      text-align: center;
+      font-size: 22px;
+      font-family: AVERTABOLD; }
+    body #question-container .box-question p {
+      color: #034910;
+      font-family: AVERTALIGHT;
+      font-size: 12px; }
+    body #question-container .box-question input {
+      border: none;
+      width: 100%;
+      font-family: AVERTALIGHT;
+      outline: none;
+      border-bottom: 1px solid #ddd; }
+    body #question-container .stt {
+      font-family: AVERTABOLD;
+      margin-right: 6px; }
+  body #banner {
+    position: relative; }
+    body #banner .logo-text-intro {
+      position: absolute;
+      left: 220px;
+      margin-top: 15px; }
+      body #banner .logo-text-intro .text-sub {
+        font-family: Arial;
+        color: white;
+        margin: 0; }
+      body #banner .logo-text-intro .text-main {
+        font-family: UTMFLAVOUR;
+        color: white;
+        font-size: 28px;
+        margin: 0;
+        margin-top: -5px; }
+    body #banner .banner-image {
+      width: 100%; }
+    body #banner .logo {
       position: absolute;
       right: 200px;
       top: 20px; }
-      body #header-top .logo img {
+      body #banner .logo img {
         height: 40px;
         margin-right: 20px; }
-    body #header-top .header-image-1 {
+    body #banner .header-image-1 {
       position: absolute;
-      height: 200px;
+      height: 230px;
       right: 0;
       top: 0; }
-    body #header-top .header-image-2 {
+    body #banner .header-image-5 {
+      height: 600px;
+      position: absolute;
+      right: 0;
+      bottom: -440px;
+      z-index: -1; }
+    body #banner .header-image-2 {
       position: absolute;
       top: 20px;
       height: 120px; }
+    body #banner .happy-container {
+      position: absolute;
+      text-align: center;
+      bottom: 60px;
+      left: 200px; }
+      body #banner .happy-container img {
+        width: 300px; }
+      body #banner .happy-container p {
+        font-family: MYRIADPRO;
+        color: white;
+        font-size: 13px; }
 
 /*# sourceMappingURL=main.css.map */

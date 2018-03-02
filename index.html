@@ -1,17 +1,153 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>Thấu hiểu Dạ Hương</title>
+	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/js/main.js"></script>
 </head>
 <body>
-	<div id="header-top">
+	<div id="banner">
 		<div class="logo">
 			<img src="assets/image/logo.png"/>
 			<img src="assets/image/logo_text.png"/>
 		</div>
+		<div class="logo-text-intro">
+			<p class="text-sub">CUỘC THI</p>
+			<p class="text-main">Thấu hiểu Dạ Hương</p>
+		</div>
+		<!-- <div class="happy-container">
+			<img src="assets/image/happy_text.png" class="happy-text">
+			<br/>
+			<img src="assets/image/product_image.png" class="product-image">
+		</div> -->
 		<img src="assets/image/header_image_1.png" class="header-image-1">
 		<img src="assets/image/header_image_2.png" class="header-image-2">
+		<img src="assets/image/banner.png" class="banner-image">
+		<img src="assets/image/header_image_5.png" class="header-image-5">
+	</div>
+	<div id="question-container">
+		<img src="assets/image/header_image_4.png" class="header-image-4">
+		<div class="question-box-container">
+			<div class="question-intro">
+				<p>“Lời đầu tiên nhãn hàng Dạ Hương – công ty TNHH Dược Phẩm Hoa Linh xin gửi lời chúc sức khỏe, hạnh phúc và lời cảm ơn sâu sắc tới chị em phụ nữ<br/> đã tin dùng sản phẩm Dạ Hương trong suốt 15 năm qua.</p>
+
+				<p>Với mục đích  tạo sân chơi  đồng thời bổ sung kiến thức chăm sóc sức khỏe sinh sản cho chị em phụ nữ, đem đến cơ hội trúng nhiều giải thưởng hấp<br/> dẫn cho khách hàng, nhãn hàng Dạ Hương – công ty TNHH Dược phẩm Hoa Linh tổ chức cuộc thi “Thấu hiểu Dạ Hương”.</p>
+			</div>
+			<p class="question-title">Người chơi trả lời các câu hỏi và điền vào ô chữ</p>
+			<div class="box-answer-container">
+				<div class="box-answer box-answer-1">
+					<div class="box-answer-item"></div>
+					<div class="box-answer-item"></div>
+					<div class="box-answer-item"></div>
+					<div class="box-answer-item"></div>
+					<div class="box-answer-item suggest">N</div>
+					<div class="box-answer-item"></div>
+					<div class="box-answer-item"></div>
+					<div class="box-answer-item active"></div>
+					<div class="box-answer-item"></div>
+					<div class="box-answer-item"></div>
+					<div class="box-answer-item"></div>
+					<div class="box-answer-item suggest">G</div>
+					<div class="box-answer-item"></div>
+					<div class="box-answer-item"></div>
+				</div>
+				<div class="box-answer box-answer-2">
+					<div class="box-answer-item"></div>
+					<div class="box-answer-item"></div>
+					<div class="box-answer-item"></div>
+					<div class="box-answer-item suggest">I</div>
+					<div class="box-answer-item active"></div>
+					<div class="box-answer-item"></div>
+				</div>
+				<div class="box-answer box-answer-3">
+					<div class="box-answer-item"></div>
+					<div class="box-answer-item suggest">Â</div>
+					<div class="box-answer-item"></div>
+					<div class="box-answer-item active"></div>
+					<div class="box-answer-item"></div>
+					<div class="box-answer-item"></div>
+				</div>
+				<div class="box-answer box-answer-4">
+					<div class="box-answer-item"></div>
+					<div class="box-answer-item"></div>
+					<div class="box-answer-item"></div>
+					<div class="box-answer-item"></div>
+					<div class="box-answer-item"></div>
+					<div class="box-answer-item suggest">N</div>
+					<div class="box-answer-item"></div>
+					<div class="box-answer-item"></div>
+					<div class="box-answer-item active"></div>
+					<div class="box-answer-item"></div>
+				</div>
+				<div class="box-answer box-answer-5">
+					<div class="box-answer-item"></div>
+					<div class="box-answer-item suggest">Ư</div>
+					<div class="box-answer-item"></div>
+					<div class="box-answer-item"></div>
+					<div class="box-answer-item"></div>
+					<div class="box-answer-item"></div>
+					<div class="box-answer-item"></div>
+					<div class="box-answer-item active"></div>
+				</div>
+				<div class="box-answer box-answer-6">
+					<div class="box-answer-item"></div>
+					<div class="box-answer-item"></div>
+					<div class="box-answer-item active"></div>
+					<div class="box-answer-item"></div>
+					<div class="box-answer-item"></div>
+					<div class="box-answer-item suggest">N</div>
+				</div>
+			</div>
+			<div class="box-question-container">
+				<div class="box-question">
+					<p><span class="stt">1</span>. Một biện pháp chăm sóc vùng kín đơn giản, hiệu quả giúp giảm nguy cơ mắc và tái mắc bệnh viêm nhiễm phụ khoa?</p>
+					<input type="text" placeholder="Nhập đáp án" maxlength="14" id="enter-question-1" data-id="1" />
+				</div>
+
+				<div class="box-question">
+					<p><span class="stt">2.</span> Một trong những hậu quả nghiêm trọng, thường gặp của bệnh viêm nhiễm phụ khoa?</p>
+					<input type="text" placeholder="Nhập đáp án" maxlength="6" id="enter-question-2" data-id="2" />
+				</div>
+
+				<div class="box-question">
+					<p><span class="stt">3.</span> Một trong những thành phần mới được tăng cường trong Dung dịch vệ sinh phụ nữ Dạ hương?
+					</p>
+					<input type="text" placeholder="Nhập đáp án" maxlength="6" id="enter-question-3" data-id="3"/>
+				</div>
+
+				<div class="box-question">
+					<p><span class="stt">4.</span> Một nguyên nhân nào khiến nhiều bạn gái chưa quan hệ tình dục vẫn bị viêm phụ khoa?</p>
+					<input type="text" placeholder="Nhập đáp án" maxlength="10" id="enter-question-4" data-id="4"/>
+				</div>
+
+				<div class="box-question">
+					<p><span class="stt">5.</span> Một trong những công dụng được tăng cường trong Dung dịch vệ sinh phụ nữ Dạ Hương? </p>
+					<input type="text" placeholder="Nhập đáp án" maxlength="8" id="enter-question-5" data-id="5"/>
+				</div>
+
+				<div class="box-question">
+					<p><span class="stt">6.</span> Xu hướng hiện nay, nhiều phụ nữ thường lựa chọn sản phẩm có thành phần gì để vệ sinh vùng kín?</p>
+					<input type="text" placeholder="Nhập đáp án" maxlength="6" id="enter-question-6" data-id="6"/>
+				</div>
+			</div>
+			<div class="result-question-container">
+				<p class="result-question-title"><span class="stt">7.</span> Đáp án của từ hàng dọc màu xanh? ( Gợi ý: Hôi phụ sản khoa đã nghiên cứu và chứng nhận tiêu chí này cho Dung dịch vệ sinh phụ<br/> nữ Dạ Hương ) </p>
+				<div class="box-result-question">
+					<div class="box-answer-item active"></div>
+					<div class="box-answer-item active"></div>
+					<div class="box-answer-item active"></div>
+					<div class="box-answer-item active"></div>
+					<div class="box-answer-item active"></div>
+					<div class="box-answer-item active"></div>
+				</div>
+				<p class="result-question-title" style="margin-top: 50px;">
+					<span class="stt">8.</span> Theo bạn, có bao nhiêu người giải đúng ô chữ trên ? 
+					<input type="text" placeholder="Nhập đáp án" onlyNumber name="number-answer">
+				</p>
+			</div>
+		</div>
 	</div>
 	<div id="information-user">
 		<p class="title-information">Thông tin người dự thi</p>
@@ -20,31 +156,32 @@
 				<div class="form-group-input">
 					<div class="box-input-item cmnd">
 						<span style="padding-left: 10px;">Số CMND</span>
-						<input type="text"/>
+						<input type="text" name="cmnd"/>
 					</div>
 					<div class="box-input-item">
 						<span style="padding-left: 35px;">Họ và tên</span>
-						<input type="text" style="margin-left: 15px;"/>
+						<input type="text" name="name" style="margin-left: 15px;"/>
 					</div>
 				</div>
 				<div class="box-input" style="margin-top: 10px;">
 					<span>Email</span>
-					<input type="email"/>
+					<input type="email" name="email"/>
 				</div>
 			</div>
 			<div class="form-group-right">
 				<div class="box-input">
 					<span>Số điện thoại</span>
-					<input type="text"/>
+					<input type="text" name="phone"/>
 				</div>
 				<div class="box-input">
 					<span>Địa chỉ nhận quà</span>
-					<input type="text"/>
+					<input type="text" name="address"/>
 				</div>
 			</div>
 		</form>
-		<img src="assets/image/arrow_down.png" class="arrow-down"/>
 		<div class="btn-complete">Click để hoàn thành đăng ký</div>
+		<p class="validate-error">Xin vui lòng hoàn thành câu hỏi và để lại thông tin trước.</p>
+		<img src="assets/image/arrow_down.png" class="arrow-down"/>
 	</div>
 	<div id="prize-container">
 		<div class="intro">
@@ -98,9 +235,9 @@
 		<img src="assets/image/flower_join_1.png" class="flower-join-1"/>
 		<img src="assets/image/flower_join_2.png" class="flower-join-2"/>
 		<div class="join-box">
-			<div class="join-box-title">Cách thức tham gian</div>
+			<div class="join-box-title">Cách thức tham gia</div>
 			<p>- Người tham gia trả lời 08 hàng chữ và dự đoán số người trả lời đúng.</p>
-			<p>- Tham gia trực tiếp trên website: http://dahuong.vn/thau-hieu-da-huong hoặc tìm phiếu câu hỏi trên báo</p> <p> giấy, các báo mạng…</p>
+			<p>- Tham gia trực tiếp trên website: <a>http://dahuong.vn/thau-hieu-da-huong</a> hoặc tìm phiếu câu hỏi trên báo</p> <p> giấy, các báo mạng…</p>
 			<p>- Đối tượng tham gia:</p>
 			<p>• Mọi người, trừ nhân viên của đơn vị tổ chức, nhà tài trợ, người thân, đối tác của thành viên Ban tổ chức. </p>
 			<p>• Mỗi người chỉ được tham dự chơi 1 lần, không áp dụng với người tham dự chơi nhiều hơn 1 lần.</p>
@@ -120,7 +257,11 @@
 		</div>
 	</div>
 	<footer>
-		
+		<div class="social-list">
+			<a href="https://www.facebook.com/dahuonghoalinh"><img src="assets/image/facebook_icon.png"></a>
+			<a href="https://www.instagram.com/dahuong.vn/"><img src="assets/image/instagram.png"></a>
+			<a href="https://www.youtube.com/c/DaHuongHoaLinh"><img src="assets/image/youtube.png"></a>
+		</div>
 	</footer>
 </body>
 </html>
