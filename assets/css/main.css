@@ -38,6 +38,9 @@
 body {
   margin: 0;
   padding: 0; }
+  body #top-header {
+    height: 30px;
+    background-image: url(../image/top_header.png); }
   body footer {
     background: #029a47;
     height: 44px; }
@@ -419,7 +422,7 @@ body {
       body #banner .logo-text-intro .text-main {
         font-family: UTMFLAVOUR;
         color: white;
-        font-size: 28px;
+        font-size: 30px;
         margin: 0;
         margin-top: -5px; }
     body #banner .banner-image {
@@ -786,7 +789,21 @@ body {
   footer .social-list {
     margin-right: 100px !important; }
   .only-desktop {
-    display: none; } }
+    display: none; }
+  #banner-mobile .banner-image {
+    margin-top: -60px; } }
+
+@media screen and (max-width: 729px) {
+  #banner-mobile .banner-image {
+    margin-top: -40px; } }
+
+@media screen and (max-width: 640px) {
+  #banner-mobile .banner-image {
+    margin-top: -20px; } }
+
+@media screen and (max-width: 550px) {
+  #banner-mobile .banner-image {
+    margin-top: -0px; } }
 
 .popup-mobile {
   position: fixed;
